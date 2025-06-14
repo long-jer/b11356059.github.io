@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
