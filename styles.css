@@ -246,8 +246,8 @@ h1:hover {
 }
 
 .pokemon-avatar {
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height: 200px;
     background: linear-gradient(135deg, #ffd93d, #ff8c42);
     border-radius: 50%;
     margin: 0 auto 15px;
