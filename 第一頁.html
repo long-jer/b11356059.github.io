@@ -1,28 +1,208 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>寶可夢地平線</title>
+    <title>寶可夢主角介紹</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <a href="C:\Users\a4568\OneDrive\Desktop\B11356059-git\第一頁.html">
-        <img src="images/logo.png" alt="寶可夢主角介紹" class="logo">
-    </a>
-    </header>
-    <main>
-        <div class="card-container">
-            <a href="rico.html" class="card">
-                <img src="images/rico.jpg" alt="莉可">
-                <h2>莉可</h2>
-            </a>
-            <a href="roy.html" class="card">
-                <img src="images/roy.jpg" alt="羅伊">
-                <h2>羅伊</h2>
-            </a>
+    <div class="container">
+        <header>
+            <h1 onclick="showHome()">寶可夢地平線</h1>
+            <p class="subtitle">與羅伊和莉可一起踏上全新的冒險旅程</p>
+        </header>
+
+        <!-- 主頁 -->
+        <div id="home" class="page active">
+            <div class="character-grid">
+                <div class="character-card" onclick="showCharacter('roy')">
+                    <div class="character-avatar">🔥</div>
+                    <h3 class="character-name">羅伊 (Roy)</h3>
+                    <p class="character-preview">來自卡洛斯地區的熱血少年，夢想找到傳說中的寶可夢，與炎兔兒一起展開冒險。</p>
+                    <button class="view-profile-btn">查看詳細資料</button>
+                </div>
+
+                <div class="character-card" onclick="showCharacter('liko')">
+                    <div class="character-avatar">🌟</div>
+                    <h3 class="character-name">莉可 (Liko)</h3>
+                    <p class="character-preview">帕爾德亞地區的新手訓練師，個性溫和但充滿好奇心，與新葉喵踏上尋找自我的旅程。</p>
+                    <button class="view-profile-btn">查看詳細資料</button>
+                </div>
+            </div>
         </div>
-    </main>
+
+        <!-- 羅伊詳細頁面 -->
+        <div id="roy" class="page">
+            <button class="back-btn" onclick="showHome()">← 返回主頁</button>
+            <div class="character-detail">
+                <div class="character-header">
+                    <div class="character-avatar">🔥</div>
+                    <div class="character-info">
+                        <h2>羅伊 (Roy)</h2>
+                        <p class="character-tagline">"我要找到傳說中的寶可夢！"</p>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>基本資料</h3>
+                    <div class="profile-content">
+                        <p><strong>年齡：</strong>約12歲</p>
+                        <p><strong>出生地：</strong>卡洛斯地區偏遠島嶼</p>
+                        <p><strong>夢想：</strong>尋找傳說中的寶可夢</p>
+                        <p><strong>代表寶可夢：</strong>炎兔兒 (Fuecoco)</p>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>角色特色</h3>
+                    <div class="profile-content">
+                        <p>羅伊是一位充滿野性和冒險精神的少年。他在島嶼上與寶可夢一起生活，對古老的傳說和神秘的寶可夢有著濃厚的興趣。雖然有時候行動比思考快，但他對夥伴的忠誠和對夢想的執著讓人印象深刻。</p>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>夥伴寶可夢</h3>
+                    <div class="pokemon-grid">
+                        <div class="pokemon-card">
+                            <div class="pokemon-avatar">🔥</div>
+                            <div class="pokemon-name">炎兔兒</div>
+                            <div class="pokemon-type">火系</div>
+                            <div class="pokemon-description">羅伊最信賴的夥伴，個性溫和但戰鬥時充滿熱情</div>
+                        </div>
+                        <div class="pokemon-card">
+                            <div class="pokemon-avatar">🌿</div>
+                            <div class="pokemon-name">哥德蝠</div>
+                            <div class="pokemon-type">飛行/龍系</div>
+                            <div class="pokemon-description">古代的龍系寶可夢，擁有神秘的力量</div>
+                        </div>
+                        <div class="pokemon-card">
+                            <div class="pokemon-avatar">⚡</div>
+                            <div class="pokemon-name">電海燕</div>
+                            <div class="pokemon-type">電氣/飛行系</div>
+                            <div class="pokemon-description">能夠在海上自由翱翔的電氣系寶可夢</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>能力數值</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-label">冒險精神</div>
+                            <div class="stat-value">★★★★★</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">野外生存</div>
+                            <div class="stat-value">★★★★★</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">直覺力</div>
+                            <div class="stat-value">★★★★☆</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">夥伴情誼</div>
+                            <div class="stat-value">★★★★☆</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>經典名言</h3>
+                    <div class="profile-content">
+                        <p>"傳說中的寶可夢一定存在某個地方！"</p>
+                        <p>"和寶可夢一起生活是最棒的事情！"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 莉可詳細頁面 -->
+        <div id="liko" class="page">
+            <button class="back-btn" onclick="showHome()">← 返回主頁</button>
+            <div class="character-detail">
+                <div class="character-header">
+                    <div class="character-avatar">🌟</div>
+                    <div class="character-info">
+                        <h2>莉可 (Liko)</h2>
+                        <p class="character-tagline">"我要找到屬於自己的道路！"</p>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>基本資料</h3>
+                    <div class="profile-content">
+                        <p><strong>年齡：</strong>約11歲</p>
+                        <p><strong>出生地：</strong>帕爾德亞地區</p>
+                        <p><strong>夢想：</strong>尋找自己的道路與目標</p>
+                        <p><strong>代表寶可夢：</strong>新葉喵 (Sprigatito)</p>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>角色特色</h3>
+                    <div class="profile-content">
+                        <p>莉可是一位溫和而富有同理心的新手訓練師。雖然一開始對自己的能力缺乏信心，但隨著旅程的進展，她逐漸發現了自己的潛力和價值。她善於觀察，對寶可夢有著深刻的理解和關愛。</p>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>夥伴寶可夢</h3>
+                    <div class="pokemon-grid">
+                        <div class="pokemon-card">
+                            <div class="pokemon-avatar">🌱</div>
+                            <div class="pokemon-name">新葉喵</div>
+                            <div class="pokemon-type">草系</div>
+                            <div class="pokemon-description">莉可的初始夥伴，個性活潑愛撒嬌</div>
+                        </div>
+                        <div class="pokemon-card">
+                            <div class="pokemon-avatar">💎</div>
+                            <div class="pokemon-name">太晶珠</div>
+                            <div class="pokemon-type">未知</div>
+                            <div class="pokemon-description">神秘的寶可夢，擁有特殊的太晶化能力</div>
+                        </div>
+                        <div class="pokemon-card">
+                            <div class="pokemon-avatar">🌸</div>
+                            <div class="pokemon-name">花舞鳥</div>
+                            <div class="pokemon-type">飛行/草系</div>
+                            <div class="pokemon-description">優雅的鳥類寶可夢，擅長華麗的舞蹈</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>能力數值</h3>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <div class="stat-label">觀察力</div>
+                            <div class="stat-value">★★★★★</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">同理心</div>
+                            <div class="stat-value">★★★★★</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">學習能力</div>
+                            <div class="stat-value">★★★★☆</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">溫柔力量</div>
+                            <div class="stat-value">★★★★☆</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-section">
+                    <h3>經典名言</h3>
+                    <div class="profile-content">
+                        <p>"每個寶可夢都有自己獨特的魅力！"</p>
+                        <p>"我相信只要努力，就能找到屬於自己的答案！"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
